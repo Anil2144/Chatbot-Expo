@@ -1,0 +1,46 @@
+/* Container for each message and profile icon */
+.message-container {
+    display: flex;
+    align-items: center;
+    margin: 5px 0;
+  }
+  
+  /* Align user messages to the right */
+  .message-container.user {
+    flex-direction: row-reverse;
+  }
+  
+  /* Profile icon styling */
+  .profile-icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin: 0 0px;
+  }
+  
+  /* Message Bubble Styling */
+  .message-bubble {
+    max-width: 70%;
+    padding: 8px 12px;
+    border-radius: 15px;
+    font-size: 14px;
+    line-height: 1.4;
+    word-wrap: break-word;
+  }
+  
+  /* User Message Bubble - Right Aligned */
+  .message-bubble.user {
+    background-color: #0078d7;
+    color: #ffffff;
+    border-bottom-right-radius: 0;
+    text-align: left;
+  }
+  
+  /* Bot Message Bubble - Left Aligned */
+  .message-bubble.bot {
+    background-color: #e0e0e0;
+    color: #333333;
+    border-bottom-left-radius: 0;
+    text-align: left;
+  }
+  
